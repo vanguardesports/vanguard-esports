@@ -843,3 +843,150 @@ button {
     font-size: 37px;
   }
 }
+
+/* =====================================
+   ROSTERS PAGE
+   ===================================== */
+
+.page-intro {
+    padding: 100px 0 80px;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-title {
+    max-width: 900px;
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.05;
+    font-weight: 900;
+    letter-spacing: -3px;
+    text-transform: uppercase;
+}
+
+.page-description {
+    max-width: 650px;
+    margin-top: 24px;
+    color: var(--text-soft);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.roster-section {
+    padding: 85px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.roster-section:nth-of-type(odd) {
+    background: var(--bg-soft);
+}
+
+.roster-heading {
+    margin-bottom: 38px;
+}
+
+.roster-number {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--text-light);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.roster-heading .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: var(--text-soft);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.roster-heading h2 {
+    font-size: clamp(32px, 5vw, 54px);
+    line-height: 1.1;
+    font-weight: 900;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+}
+
+.roster-heading p {
+    max-width: 600px;
+    margin-top: 16px;
+    color: var(--text-soft);
+    font-size: 16px;
+}
+
+.roster-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.roster-player {
+    min-height: 82px;
+    padding: 22px 26px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    background: var(--white);
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.roster-player:hover {
+    border-color: var(--black);
+    transform: translateY(-2px);
+}
+
+.roster-player span {
+    color: var(--text-light);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.roster-player strong {
+    font-size: 19px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 760px) {
+    .page-intro {
+        padding: 70px 0 55px;
+    }
+
+    .page-title {
+        font-size: clamp(36px, 11vw, 54px);
+        letter-spacing: -1.5px;
+        overflow-wrap: anywhere;
+    }
+
+    .page-description {
+        font-size: 16px;
+    }
+
+    .roster-section {
+        padding: 60px 0;
+    }
+
+    .roster-heading h2 {
+        font-size: 34px;
+        letter-spacing: -1px;
+    }
+
+    .roster-list {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .roster-player {
+        min-height: 70px;
+        padding: 18px;
+    }
+
+    .roster-player strong {
+        font-size: 17px;
+    }
+}
