@@ -12,6 +12,11 @@
   --border: #e5e5e5;
   --accent: #bcbcbc;
   --container: 1240px;
+
+  --text-soft: #777777;
+  --text-light: #999999;
+  --bg-soft: #f7f7f7;
+  --transition: all .25s ease;
 }
 
 * {
