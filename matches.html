@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Матчи и результаты Vanguard Esports.">
+  <title>Матчи — Vanguard Esports</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .matches-hero {
+      padding: 85px 0 65px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .matches-hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin: 22px 0;
+    }
+
+    .matches-hero p {
+      color: #777;
+      font-size: 19px;
+      max-width: 550px;
+    }
+
+    .matches-section {
+      padding: 75px 0;
+    }
+
+    .matches-section h2 {
+      font-size: clamp(30px, 5vw, 44px);
+      letter-spacing: -1.5px;
+      margin: 18px 0 35px;
+    }
+
+    .matches-empty {
+      border: 1px solid #e5e5e5;
+      padding: 65px 30px;
+      text-align: center;
+      background: #fafafa;
+    }
+
+    .matches-empty-number {
+      color: #999;
+      font-size: 14px;
+      letter-spacing: 3px;
+      margin-bottom: 25px;
+    }
+
+    .matches-empty h3 {
+      font-size: clamp(21px, 4vw, 30px);
+      margin: 0 auto 15px;
+      max-width: 600px;
+    }
+
+    .matches-empty p {
+      color: #777;
+      line-height: 1.8;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .matches-note {
+      margin-top: 25px;
+      color: #888;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 600px) {
+      .matches-hero {
+        padding: 65px 0 45px;
+      }
+
+      .matches-hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .matches-section {
+        padding: 55px 0;
+      }
+
+      .matches-empty {
+        padding: 45px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VT</span>
+        <span class="logo-text">
+          VANGUARD<small>ESPORTS</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <a href="index.html">Главная</a>
+        <a href="teams.html">Составы</a>
+        <a href="matches.html" class="active">Матчи</a>
+        <a href="news.html">Новости</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="matches-hero">
+      <div class="container">
+        <div class="section-label">COMPETITIVE HISTORY</div>
+        <h1>Матчи</h1>
+        <p>Расписание, результаты и соревновательная история Vanguard Esports.</p>
+      </div>
+    </section>
+
+    <section class="matches-section">
+      <div class="container">
+        <div class="section-label">UPCOMING</div>
+        <h2>Предстоящие матчи</h2>
+
+        <div class="matches-empty">
+          <div class="matches-empty-number">01 / UPCOMING</div>
+          <h3>Расписание скоро появится</h3>
+          <p>
+            Информация о следующих матчах Vanguard Esports
+            будет опубликована после подтверждения расписания турниров.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="matches-section">
+      <div class="container">
+        <div class="section-label">RESULTS</div>
+        <h2>Последние результаты</h2>
+
+        <div class="matches-empty">
+          <div class="matches-empty-number">02 / RESULTS</div>
+          <h3>История матчей обновляется</h3>
+          <p>
+            Здесь будут публиковаться подтверждённые результаты
+            матчей основных и молодёжных составов Vanguard.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">VT</span>
+          <span class="logo-text">
+            VANGUARD<small>ESPORTS</small>
+          </span>
+        </a>
+        <div class="footer-description">
+          MORE THAN A TEAM.
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Vanguard Esports. Все права защищены.</span>
+        <span>MORE THAN A TEAM.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navigation = document.getElementById('navigation');
+
+    menuToggle.addEventListener('click', () => {
+      navigation.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+
+    navigation.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
