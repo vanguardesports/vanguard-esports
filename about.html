@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Официальная информация о Vanguard Esports — организации по Counter-Strike 2.">
+  <title>О нас — Vanguard Esports</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .about-hero {
+      padding: 85px 0 70px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .about-hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin: 22px 0;
+    }
+
+    .about-hero p {
+      color: #777;
+      font-size: 19px;
+      line-height: 1.7;
+      max-width: 650px;
+    }
+
+    .about-section {
+      padding: 75px 0;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .about-section h2 {
+      font-size: clamp(30px, 5vw, 46px);
+      letter-spacing: -1.5px;
+      margin: 18px 0 25px;
+    }
+
+    .about-copy {
+      max-width: 760px;
+      color: #666;
+      font-size: 17px;
+      line-height: 1.9;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 35px;
+    }
+
+    .about-card {
+      border: 1px solid #e5e5e5;
+      padding: 30px 24px;
+      min-width: 0;
+    }
+
+    .about-card-number {
+      font-size: 13px;
+      color: #999;
+      letter-spacing: 3px;
+    }
+
+    .about-card h3 {
+      font-size: 25px;
+      margin: 25px 0 12px;
+    }
+
+    .about-card p {
+      color: #777;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .about-principles {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 35px;
+      margin-top: 30px;
+    }
+
+    .principle {
+      padding: 25px 0;
+      border-top: 1px solid #e5e5e5;
+    }
+
+    .principle h3 {
+      font-size: 21px;
+      margin: 0 0 10px;
+    }
+
+    .principle p {
+      color: #777;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .about-statement {
+      background: #111;
+      color: #fff;
+      padding: 55px 40px;
+      margin-top: 35px;
+    }
+
+    .about-statement p {
+      font-size: clamp(28px, 5vw, 48px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      margin: 0;
+    }
+
+    @media (max-width: 700px) {
+      .about-hero {
+        padding: 65px 0 45px;
+      }
+
+      .about-hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .about-section {
+        padding: 55px 0;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-principles {
+        grid-template-columns: 1fr;
+      }
+
+      .about-statement {
+        padding: 35px 25px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VT</span>
+        <span class="logo-text">
+          VANGUARD<small>ESPORTS</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <a href="index.html">Главная</a>
+        <a href="teams.html">Составы</a>
+        <a href="matches.html">Матчи</a>
+        <a href="news.html">Новости</a>
+        <a href="about.html" class="active">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="about-hero">
+      <div class="container">
+        <div class="section-label">ABOUT VANGUARD</div>
+        <h1>Больше, чем команда.</h1>
+        <p>
+          Vanguard Esports — киберспортивная организация,
+          развивающая соревновательное направление Counter-Strike 2
+          и формирующая собственную систему подготовки игроков.
+        </p>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="section-label">OUR STORY</div>
+        <h2>Наша история</h2>
+
+        <div class="about-copy">
+          <p>
+            Vanguard Esports начала официальную деятельность
+            2 августа 2026 года. Организация создавалась
+            с нуля с целью построить устойчивую киберспортивную
+            структуру, объединяющую игроков, персонал и
+            единую соревновательную систему.
+          </p>
+
+          <p>
+            Наша задача — не просто формировать игровые составы,
+            а создавать условия для командного развития,
+            дисциплины и достижения спортивных результатов.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="section-label">OUR STRUCTURE</div>
+        <h2>Структура организации</h2>
+
+        <div class="about-copy">
+          Vanguard развивает несколько соревновательных
+          направлений, каждое из которых имеет собственные
+          задачи и перспективы роста.
+        </div>
+
+        <div class="about-grid">
+
+          <article class="about-card">
+            <div class="about-card-number">01 / MAIN</div>
+            <h3>Main</h3>
+            <p>
+              Основное соревновательное направление
+              Vanguard Esports.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-card-number">02 / ACADEMY</div>
+            <h3>Academy</h3>
+            <p>
+              Развитие игроков и подготовка к более
+              высокому соревновательному уровню.
+            </p>
+          </article>
+
+          <article class="about-card">
+            <div class="about-card-number">03 / JUNIOR</div>
+            <h3>Junior</h3>
+            <p>
+              Начальная соревновательная среда
+              для молодых игроков.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="section-label">OUR PRINCIPLES</div>
+        <h2>Наши принципы</h2>
+
+        <div class="about-principles">
+
+          <article class="principle">
+            <h3>Дисциплина</h3>
+            <p>
+              Ответственное отношение к тренировкам,
+              матчам и обязательствам внутри организации.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Развитие</h3>
+            <p>
+              Постоянное совершенствование индивидуальных
+              навыков и командной игры.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Командная работа</h3>
+            <p>
+              Взаимное уважение, взаимодействие
+              и общая ответственность за результат.
+            </p>
+          </article>
+
+          <article class="principle">
+            <h3>Профессионализм</h3>
+            <p>
+              Системный подход к организации,
+              подготовке и соревновательной деятельности.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="about-statement">
+          <p>MORE THAN A TEAM.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">VT</span>
+          <span class="logo-text">
+            VANGUARD<small>ESPORTS</small>
+          </span>
+        </a>
+        <div class="footer-description">
+          MORE THAN A TEAM.
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Vanguard Esports. Все права защищены.</span>
+        <span>MORE THAN A TEAM.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navigation = document.getElementById('navigation');
+
+    menuToggle.addEventListener('click', () => {
+      navigation.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+
+    navigation.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
