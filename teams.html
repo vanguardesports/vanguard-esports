@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Составы Vanguard Esports: Main, Academy и Junior.">
+  <title>Составы — Vanguard Esports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">VT</span>
+      <span class="logo-text">VANGUARD<small>ESPORTS</small></span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню">
+      <span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="index.html">Главная</a>
+      <a href="teams.html" class="active">Составы</a>
+      <a href="matches.html">Матчи</a>
+      <a href="news.html">Новости</a>
+      <a href="awards.html">Награды</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="section page-intro">
+    <div class="container">
+      <div class="section-label">VANGUARD / ROSTERS</div>
+      <h1 class="page-title">Наши составы</h1>
+      <p class="page-description">
+        Три направления Vanguard Esports, объединённые общей
+        системой развития и соревновательной деятельностью.
+      </p>
+    </div>
+  </section>
+
+  <section class="section roster-section" id="main">
+    <div class="container">
+      <div class="roster-heading">
+        <span class="roster-number">01</span>
+        <div>
+          <div class="section-label">MAIN ROSTER</div>
+          <h2>Vanguard Main</h2>
+          <p>Основное соревновательное направление организации.</p>
+        </div>
+      </div>
+
+      <div class="roster-list">
+        <div class="roster-player">
+          <span>01</span>
+          <strong>Состав обновляется</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section roster-section" id="academy">
+    <div class="container">
+      <div class="roster-heading">
+        <span class="roster-number">02</span>
+        <div>
+          <div class="section-label">ACADEMY ROSTER</div>
+          <h2>Vanguard Academy</h2>
+          <p>Развитие молодых игроков и подготовка к следующему уровню.</p>
+        </div>
+      </div>
+
+      <div class="roster-list">
+        <div class="roster-player"><span>01</span><strong>l1nex</strong></div>
+        <div class="roster-player"><span>02</span><strong>rodyaipoteka</strong></div>
+        <div class="roster-player"><span>03</span><strong>QweeZ</strong></div>
+        <div class="roster-player"><span>04</span><strong>LunariX</strong></div>
+        <div class="roster-player"><span>05</span><strong>ShArikS</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section roster-section" id="junior">
+    <div class="container">
+      <div class="roster-heading">
+        <span class="roster-number">03</span>
+        <div>
+          <div class="section-label">JUNIOR ROSTER</div>
+          <h2>Vanguard Junior</h2>
+          <p>Стартовая соревновательная среда для новых игроков.</p>
+        </div>
+      </div>
+
+      <div class="roster-list">
+        <div class="roster-player"><span>01</span><strong>Katanafire24</strong></div>
+        <div class="roster-player"><span>02</span><strong>Sirovim</strong></div>
+        <div class="roster-player"><span>03</span><strong>AyPik</strong></div>
+        <div class="roster-player"><span>04</span><strong>Marcelinex00</strong></div>
+        <div class="roster-player"><span>05</span><strong>dark3n</strong></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer-main">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">VT</span>
+      <span class="logo-text">VANGUARD<small>ESPORTS</small></span>
+    </a>
+    <p>Независимая киберспортивная организация по Counter-Strike 2.</p>
+    <div class="footer-nav">
+      <a href="index.html">Главная</a>
+      <a href="matches.html">Матчи</a>
+      <a href="news.html">Новости</a>
+      <a href="awards.html">Награды</a>
+      <a href="contacts.html">Контакты</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Vanguard Esports. Все права защищены.</span>
+    <span>MORE THAN A TEAM.</span>
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navigation = document.getElementById('navigation');
+
+  menuToggle.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    menuToggle.classList.toggle('active');
+  });
+
+  navigation.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('open');
+      menuToggle.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
