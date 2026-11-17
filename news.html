@@ -1,0 +1,268 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Официальные новости Vanguard Esports.">
+  <title>Новости — Vanguard Esports</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .news-hero {
+      padding: 85px 0 65px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .news-hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin: 22px 0;
+    }
+
+    .news-hero p {
+      color: #777;
+      font-size: 19px;
+      max-width: 550px;
+    }
+
+    .news-section {
+      padding: 75px 0;
+    }
+
+    .news-section h2 {
+      font-size: clamp(30px, 5vw, 44px);
+      letter-spacing: -1.5px;
+      margin: 18px 0 35px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .news-card {
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    .news-card-top {
+      min-height: 190px;
+      background: #111;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .news-card-top span {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: 5px;
+    }
+
+    .news-card-content {
+      padding: 30px;
+    }
+
+    .news-date {
+      color: #888;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .news-card h3 {
+      font-size: clamp(22px, 3vw, 29px);
+      line-height: 1.2;
+      margin: 18px 0 14px;
+    }
+
+    .news-card p {
+      color: #777;
+      line-height: 1.8;
+      margin-bottom: 22px;
+    }
+
+    .news-empty {
+      border: 1px solid #e5e5e5;
+      background: #fafafa;
+      text-align: center;
+      padding: 60px 25px;
+    }
+
+    .news-empty span {
+      color: #999;
+      letter-spacing: 3px;
+      font-size: 13px;
+    }
+
+    .news-empty h3 {
+      font-size: clamp(22px, 4vw, 30px);
+      margin: 22px 0 12px;
+    }
+
+    .news-empty p {
+      color: #777;
+      line-height: 1.8;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 700px) {
+      .news-hero {
+        padding: 65px 0 45px;
+      }
+
+      .news-hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .news-section {
+        padding: 55px 0;
+      }
+
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .news-card-top {
+        min-height: 150px;
+      }
+
+      .news-card-content {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VT</span>
+        <span class="logo-text">
+          VANGUARD<small>ESPORTS</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <a href="index.html">Главная</a>
+        <a href="teams.html">Составы</a>
+        <a href="matches.html">Матчи</a>
+        <a href="news.html" class="active">Новости</a>
+        <a href="about.html">О нас</a>
+        <a href="contacts.html">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="news-hero">
+      <div class="container">
+        <div class="section-label">LATEST UPDATES</div>
+        <h1>Новости</h1>
+        <p>
+          Официальные объявления, события и новости
+          организации Vanguard Esports.
+        </p>
+      </div>
+    </section>
+
+    <section class="news-section">
+      <div class="container">
+        <div class="section-label">VANGUARD MEDIA</div>
+        <h2>Последние публикации</h2>
+
+        <div class="news-grid">
+
+          <article class="news-card">
+            <div class="news-card-top">
+              <span>VT / 01</span>
+            </div>
+
+            <div class="news-card-content">
+              <div class="news-date">01 NOVEMBER 2026</div>
+              <h3>Vanguard Main — чемпионы TET EPL</h3>
+              <p>
+                Основной состав Vanguard занял первое место
+                в турнире TET EPL среди восьми команд.
+                Команда получила чемпионский титул.
+              </p>
+              <a href="awards.html" class="text-link">
+                ПОСМОТРЕТЬ ДОСТИЖЕНИЕ ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="news-empty" style="margin-top: 30px;">
+          <span>MORE UPDATES</span>
+          <h3>Продолжение следует</h3>
+          <p>
+            Новые объявления, результаты и события
+            Vanguard Esports будут публиковаться здесь.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <a href="index.html" class="logo">
+          <span class="logo-mark">VT</span>
+          <span class="logo-text">
+            VANGUARD<small>ESPORTS</small>
+          </span>
+        </a>
+        <div class="footer-description">
+          MORE THAN A TEAM.
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Vanguard Esports. Все права защищены.</span>
+        <span>MORE THAN A TEAM.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navigation = document.getElementById('navigation');
+
+    menuToggle.addEventListener('click', () => {
+      navigation.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+
+    navigation.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>
