@@ -61,7 +61,7 @@
     .news-card-image {
       min-height: 340px;
       overflow: hidden;
-      background: #f2f2f2;
+      background: #111;
     }
 
     .news-card-image img {
@@ -179,8 +179,154 @@
 
 <body>
 
-  <header class="header">
-    <div class="container header-inner">
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">VT</span>
+      <span class="logo-text">
+        VANGUARD<small>ESPORTS</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="index.html">Главная</a>
+      <a href="teams.html">Составы</a>
+      <a href="matches.html">Матчи</a>
+      <a href="news.html" class="active">Новости</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="news-hero">
+    <div class="container">
+      <div class="section-label">VANGUARD MEDIA</div>
+      <h1>Новости</h1>
+      <p>
+        Официальные объявления, события и новости
+        организации Vanguard Esports.
+      </p>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <div class="container">
+
+      <div class="section-label">OFFICIAL UPDATES / 002</div>
+      <h2>Последние публикации</h2>
+
+      <div class="news-grid">
+
+        <!-- HLTV TIER 6 -->
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img
+              src="hltv-tier6-vanguard.png"
+              alt="Vanguard Esports — HLTV Tier 6">
+          </div>
+
+          <div class="news-card-content">
+            <div class="news-category">
+              COMPETITIVE ACHIEVEMENT
+            </div>
+
+            <div class="news-date">
+              НОЯБРЬ 2026
+            </div>
+
+            <h3>
+              Vanguard Academy и Junior —
+              HLTV Tier 6
+            </h3>
+
+            <p>
+              Два состава Vanguard Esports представлены
+              в HLTV Tier 6. Academy занимает позицию #44,
+              а Junior — #45.
+            </p>
+
+            <a href="news-hltv-tier6.html"
+              class="text-link">
+              ЧИТАТЬ ПОЛНОСТЬЮ ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- WEBSITE LAUNCH -->
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <div style="
+              width:100%;
+              height:100%;
+              min-height:340px;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              color:#fff;
+              font-size:clamp(40px,7vw,75px);
+              font-weight:900;
+              letter-spacing:5px;">
+              VT / 01
+            </div>
+          </div>
+
+          <div class="news-card-content">
+            <div class="news-category">
+              OFFICIAL ANNOUNCEMENT
+            </div>
+
+            <div class="news-date">
+              18 НОЯБРЯ 2026
+            </div>
+
+            <h3>
+              Vanguard Esports —
+              официальный сайт запущен
+            </h3>
+
+            <p>
+              Представляем официальную цифровую площадку
+              Vanguard Esports. Новый этап развития
+              организации, её составов и соревновательного пути.
+            </p>
+
+            <a href="news-website-launch.html"
+              class="text-link">
+              ЧИТАТЬ ПОЛНОСТЬЮ ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="news-empty">
+        <span>MORE UPDATES</span>
+        <h3>Продолжение следует</h3>
+        <p>
+          Новые объявления, результаты и события
+          Vanguard Esports будут публиковаться здесь.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-main">
       <a href="index.html" class="logo">
         <span class="logo-mark">VT</span>
         <span class="logo-text">
@@ -188,178 +334,35 @@
         </span>
       </a>
 
-      <button class="menu-toggle" id="menuToggle"
-        aria-label="Открыть меню">
-        <span></span><span></span><span></span>
-      </button>
-
-      <nav class="navigation" id="navigation">
-        <a href="index.html">Главная</a>
-        <a href="teams.html">Составы</a>
-        <a href="matches.html">Матчи</a>
-        <a href="news.html" class="active">Новости</a>
-        <a href="about.html">О нас</a>
-        <a href="contacts.html">Контакты</a>
-      </nav>
+      <div class="footer-description">
+        MORE THAN A TEAM.
+      </div>
     </div>
-  </header>
 
-  <main>
-
-    <section class="news-hero">
-      <div class="container">
-        <div class="section-label">VANGUARD MEDIA</div>
-        <h1>Новости</h1>
-        <p>
-          Официальные объявления, события и новости
-          организации Vanguard Esports.
-        </p>
-      </div>
-    </section>
-
-    <section class="news-section">
-      <div class="container">
-
-        <div class="section-label">OFFICIAL UPDATES / 002</div>
-        <h2>Последние публикации</h2>
-
-        <div class="news-grid">
-
-          <!-- NEWS 02: WEBSITE LAUNCH -->
-
-          <article class="news-card">
-
-            <div class="news-card-image">
-              <img
-                src="file_000000007c9c820ca09baea80773c28a.png"
-                alt="Vanguard Esports — запуск официального сайта">
-            </div>
-
-            <div class="news-card-content">
-
-              <div class="news-category">
-                Официальное объявление
-              </div>
-
-              <div class="news-date">
-                18 НОЯБРЯ 2026
-              </div>
-
-              <h3>
-                Vanguard Esports —
-                официальный сайт запущен
-              </h3>
-
-              <p>
-                Представляем официальную цифровую площадку
-                Vanguard Esports. Новый этап развития
-                организации, её составов и соревновательного пути.
-              </p>
-
-              <a href="news-website-launch.html"
-                class="text-link">
-                ЧИТАТЬ ПОЛНОСТЬЮ ↗
-              </a>
-
-            </div>
-          </article>
-
-          <!-- NEWS 01: TET EPL CHAMPIONS -->
-
-          <article class="news-card">
-
-            <div class="news-card-image">
-              <img
-                src="IMG_20261113_034752_749.jpg"
-                alt="Vanguard Esports — чемпионы TET EPL">
-            </div>
-
-            <div class="news-card-content">
-
-              <div class="news-category">
-                Турнир / Достижение
-              </div>
-
-              <div class="news-date">
-                01 НОЯБРЯ 2026
-              </div>
-
-              <h3>
-                Vanguard Main —
-                чемпионы TET EPL
-              </h3>
-
-              <p>
-                Основной состав Vanguard занял первое место
-                в турнире TET EPL среди восьми команд.
-                Команда получила чемпионский титул,
-                став победителем соревнования.
-              </p>
-
-              <a href="awards.html"
-                class="text-link">
-                ПОСМОТРЕТЬ ДОСТИЖЕНИЕ ↗
-              </a>
-
-            </div>
-          </article>
-
-        </div>
-
-        <div class="news-empty">
-          <span>MORE UPDATES</span>
-          <h3>Продолжение следует</h3>
-          <p>
-            Новые объявления, результаты и события
-            Vanguard Esports будут публиковаться здесь.
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-
-      <div class="footer-main">
-        <a href="index.html" class="logo">
-          <span class="logo-mark">VT</span>
-          <span class="logo-text">
-            VANGUARD<small>ESPORTS</small>
-          </span>
-        </a>
-
-        <div class="footer-description">
-          MORE THAN A TEAM.
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <span>© 2026 Vanguard Esports. Все права защищены.</span>
-        <span>MORE THAN A TEAM.</span>
-      </div>
-
+    <div class="footer-bottom">
+      <span>© 2026 Vanguard Esports. Все права защищены.</span>
+      <span>MORE THAN A TEAM.</span>
     </div>
-  </footer>
 
-  <script>
-    const menuToggle = document.getElementById('menuToggle');
-    const navigation = document.getElementById('navigation');
+  </div>
+</footer>
 
-    menuToggle.addEventListener('click', () => {
-      navigation.classList.toggle('open');
-      menuToggle.classList.toggle('active');
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navigation = document.getElementById('navigation');
+
+  menuToggle.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    menuToggle.classList.toggle('active');
+  });
+
+  navigation.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('open');
+      menuToggle.classList.remove('active');
     });
-
-    navigation.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        navigation.classList.remove('open');
-        menuToggle.classList.remove('active');
-      });
-    });
-  </script>
+  });
+</script>
 
 </body>
 </html>
