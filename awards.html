@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Достижения и награды Vanguard Esports.">
+  <title>Достижения — Vanguard Esports</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .awards-page {
+      padding: 80px 0;
+    }
+
+    .awards-intro {
+      margin-bottom: 55px;
+    }
+
+    .awards-intro h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      margin: 18px 0;
+    }
+
+    .award-card {
+      border: 1px solid #dedede;
+      margin-top: 35px;
+    }
+
+    .award-card img {
+      display: block;
+      width: 100%;
+      max-height: 520px;
+      object-fit: contain;
+      background: #f3f3f3;
+    }
+
+    .award-info {
+      padding: 35px;
+    }
+
+    .award-info h2 {
+      font-size: clamp(28px, 5vw, 48px);
+      margin: 18px 0;
+    }
+
+    .award-info p {
+      color: #666;
+      line-height: 1.8;
+      font-size: 17px;
+    }
+
+    .award-label {
+      color: #777;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 4px;
+    }
+
+    @media (max-width: 600px) {
+      .awards-page {
+        padding: 55px 0;
+      }
+
+      .award-info {
+        padding: 22px;
+      }
+
+      .award-card img {
+        max-height: 300px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VT</span>
+        <span class="logo-text">VANGUARD<small>ESPORTS</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="navigation" id="navigation">
+      <a href="index.html">Главная</a>
+      <a href="teams.html">Составы</a>
+      <a href="matches.html">Матчи</a>
+      <a href="news.html">Новости</a>
+      <a href="awards.html" class="active" aria-current="page">Награды</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    </div>
+  </header>
+
+  <main class="awards-page">
+    <div class="container">
+
+      <div class="awards-intro">
+        <div class="section-label">TROPHY ROOM</div>
+        <h1>Наши достижения</h1>
+        <p>История результатов Vanguard Esports.</p>
+      </div>
+
+      <article class="award-card">
+        <img
+          src="IMG_20261113_034752_749.jpg"
+          alt="Vanguard Esports — чемпионы TET EPL">
+
+        <div class="award-info">
+          <div class="award-label">ПЕРВОЕ МЕСТО</div>
+          <h2>TET EPL — чемпионы</h2>
+          <p>
+            1 ноября 2026 года Vanguard Main занял первое
+            место в турнире TET EPL среди 8 команд.
+          </p>
+          <p>
+            Подразделение: Vanguard Main<br>
+            Результат: 1 место<br>
+            Награда: чемпионский титул
+          </p>
+          <p>
+            Подробная статистика матчей не сохранилась.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <span>© 2026 Vanguard Esports. Все права защищены.</span>
+      <span>MORE THAN A TEAM.</span>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navigation = document.getElementById('navigation');
+
+    menuToggle.addEventListener('click', () => {
+      navigation.classList.toggle('open');
+      menuToggle.classList.toggle('active');
+    });
+
+    navigation.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navigation.classList.remove('open');
+        menuToggle.classList.remove('active');
+      });
+    });
+  </script>
+
+</body>
+</html>

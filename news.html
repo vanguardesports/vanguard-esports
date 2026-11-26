@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Официальные новости Vanguard Esports.">
+  <title>Новости — Vanguard Esports</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .news-hero {
+      padding: 85px 0 65px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .news-hero h1 {
+      font-size: clamp(42px, 8vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin: 22px 0;
+    }
+
+    .news-hero p {
+      color: #777;
+      font-size: 19px;
+      max-width: 550px;
+    }
+
+    .news-section {
+      padding: 75px 0 110px;
+    }
+
+    .news-section h2 {
+      font-size: clamp(30px, 5vw, 44px);
+      letter-spacing: -1.5px;
+      margin: 18px 0 35px;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    .news-card {
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      min-width: 0;
+      transition: .25s ease;
+    }
+
+    .news-card:hover {
+      border-color: #999;
+      transform: translateY(-3px);
+    }
+
+    .news-card-image {
+      min-height: 340px;
+      overflow: hidden;
+      background: #111;
+    }
+
+    .news-card-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 340px;
+      display: block;
+      object-fit: cover;
+    }
+
+    .news-card-content {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    .news-category {
+      color: #888;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .news-date {
+      margin-top: 18px;
+      color: #999;
+      font-size: 12px;
+      letter-spacing: 1px;
+    }
+
+    .news-card h3 {
+      font-size: clamp(25px, 3vw, 38px);
+      line-height: 1.15;
+      letter-spacing: -1px;
+      margin: 20px 0 16px;
+    }
+
+    .news-card p {
+      color: #777;
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+
+    .news-card .text-link {
+      display: inline-block;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #111;
+      color: #111;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .news-empty {
+      margin-top: 35px;
+      padding: 45px 25px;
+      border: 1px solid #e5e5e5;
+      background: #fafafa;
+      text-align: center;
+    }
+
+    .news-empty span {
+      color: #999;
+      letter-spacing: 3px;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .news-empty h3 {
+      font-size: 26px;
+      margin: 18px 0 10px;
+    }
+
+    .news-empty p {
+      color: #777;
+      line-height: 1.8;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 760px) {
+      .news-hero {
+        padding: 65px 0 45px;
+      }
+
+      .news-hero h1 {
+        letter-spacing: -2px;
+      }
+
+      .news-section {
+        padding: 55px 0 75px;
+      }
+
+      .news-card {
+        grid-template-columns: 1fr;
+      }
+
+      .news-card-image {
+        min-height: 210px;
+      }
+
+      .news-card-image img {
+        min-height: 210px;
+        max-height: 300px;
+      }
+
+      .news-card-content {
+        padding: 27px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">VT</span>
+      <span class="logo-text">
+        VANGUARD<small>ESPORTS</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navigation" id="navigation">
+      <a href="index.html">Главная</a>
+      <a href="teams.html">Составы</a>
+      <a href="matches.html">Матчи</a>
+      <a href="news.html" class="active" aria-current="page">Новости</a>
+      <a href="awards.html">Награды</a>
+      <a href="about.html">О нас</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="news-hero">
+    <div class="container">
+      <div class="section-label">VANGUARD MEDIA</div>
+      <h1>Новости</h1>
+      <p>
+        Официальные объявления, события и новости
+        организации Vanguard Esports.
+      </p>
+    </div>
+  </section>
+
+  <section class="news-section">
+    <div class="container">
+
+      <div class="section-label">OFFICIAL UPDATES / 002</div>
+      <h2>Последние публикации</h2>
+
+      <div class="news-grid">
+
+        <!-- HLTV TIER 6 -->
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <img
+              src="hltv-tier6-vanguard.png"
+              alt="Vanguard Esports — HLTV Tier 6">
+          </div>
+
+          <div class="news-card-content">
+            <div class="news-category">
+              COMPETITIVE ACHIEVEMENT
+            </div>
+
+            <div class="news-date">
+              НОЯБРЬ 2026
+            </div>
+
+            <h3>
+              Vanguard Academy и Junior —
+              HLTV Tier 6
+            </h3>
+
+            <p>
+              Два состава Vanguard Esports представлены
+              в HLTV Tier 6. Academy занимает позицию #44,
+              а Junior — #45.
+            </p>
+
+            <a href="news-hltv-tier6.html"
+              class="text-link">
+              ЧИТАТЬ ПОЛНОСТЬЮ ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- WEBSITE LAUNCH -->
+
+        <article class="news-card">
+          <div class="news-card-image">
+            <div style="
+              width:100%;
+              height:100%;
+              min-height:340px;
+              display:flex;
+              align-items:center;
+              justify-content:center;
+              color:#fff;
+              font-size:clamp(40px,7vw,75px);
+              font-weight:900;
+              letter-spacing:5px;">
+              VT / 01
+            </div>
+          </div>
+
+          <div class="news-card-content">
+            <div class="news-category">
+              OFFICIAL ANNOUNCEMENT
+            </div>
+
+            <div class="news-date">
+              18 НОЯБРЯ 2026
+            </div>
+
+            <h3>
+              Vanguard Esports —
+              официальный сайт запущен
+            </h3>
+
+            <p>
+              Представляем официальную цифровую площадку
+              Vanguard Esports. Новый этап развития
+              организации, её составов и соревновательного пути.
+            </p>
+
+            <a href="news-website-launch.html"
+              class="text-link">
+              ЧИТАТЬ ПОЛНОСТЬЮ ↗
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="news-empty">
+        <span>MORE UPDATES</span>
+        <h3>Продолжение следует</h3>
+        <p>
+          Новые объявления, результаты и события
+          Vanguard Esports будут публиковаться здесь.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+
+    <div class="footer-main">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">VT</span>
+        <span class="logo-text">
+          VANGUARD<small>ESPORTS</small>
+        </span>
+      </a>
+
+      <div class="footer-description">
+        MORE THAN A TEAM.
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© 2026 Vanguard Esports. Все права защищены.</span>
+      <span>MORE THAN A TEAM.</span>
+    </div>
+
+  </div>
+</footer>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navigation = document.getElementById('navigation');
+
+  menuToggle.addEventListener('click', () => {
+    navigation.classList.toggle('open');
+    menuToggle.classList.toggle('active');
+  });
+
+  navigation.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      navigation.classList.remove('open');
+      menuToggle.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>
